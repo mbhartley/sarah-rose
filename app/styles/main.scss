@@ -45,7 +45,6 @@ p {
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
 #background-image {
   left: 50%;
-
   margin-left: -500px;   /* 50% */
   }
 }
@@ -61,7 +60,7 @@ p {
 }
 
 #intro {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 #name {
@@ -117,6 +116,10 @@ p {
     }
 }
 
+#about-paragraphs {
+    margin-top: 100px;
+}
+
 #my-about {
     margin-top: 120px;
 }
@@ -150,7 +153,7 @@ p {
 .avatar {
     border-radius: 50%;
     opacity: 0.9;
-    margin-top: 80px;
+    margin-top: 40px;
     width:  280px;
     margin-left: 138px;
     filter: drop-shadow(-4px 4px 6px black);
