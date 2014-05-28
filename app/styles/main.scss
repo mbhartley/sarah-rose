@@ -16,6 +16,10 @@ p {
   font-weight: 300;  
 }
 
+.center {
+    text-align: center;
+}
+
 // BACKGROUND IMAGE 
 
 #background-image {
@@ -41,24 +45,28 @@ p {
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
 #background-image {
   left: 50%;
-  margin-left: -512px;   /* 50% */
+
+  margin-left: -500px;   /* 50% */
   }
 }
 
 .title {
-    margin-top: 90px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 #intro, #description {
     font-family: 'Lato', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 300;
+}
+
+#intro {
+    padding-top: 120px;
 }
 
 #name {
     font-family: 'Lustria', serif;
-    font-size: 98px;
+    font-size: 102px;
 }
 
 // NAVBAR
@@ -69,21 +77,37 @@ p {
 }
 
 .nav {
-    margin-left: 140px;
+    // margin-left: 158px;
+    width: 120px;
+}
+
+.navbar .nav > li {
+    // border: 1px solid black;
+    margin: 2px 4px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
 }
 
 .navbar .nav > li > a {
     font-family: 'Lato', sans-serif;
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
-    margin: 0 6px;
+    padding: 12px;
+
+}
+
+.navbar .nav > li > a:hover {
+    background-color: rgb(246, 232, 143);
+    color: rgb(192, 16, 16);
 }
 
 // ABOUT ME
 
 .about-me {
-    margin-top: 360px;
+    margin-top: 320px;
+    margin-left: 40px;
     height: 760px;
     // background-color: rgb(100, 111, 41, 0.4);
 
@@ -123,17 +147,28 @@ p {
 
 // CONNECT 
 
+.avatar {
+    border-radius: 50%;
+    opacity: 0.9;
+    margin-top: 80px;
+    width:  280px;
+    margin-left: 138px;
+    filter: drop-shadow(-4px 4px 6px black);
+}
+
 .connect {
     height: 720px;
     p {
-        margin-top: 120px;
-        font-size: 22px;
+        margin-top: 20px;
+        margin-left: 70px;
+        font-size: 20px;
     }
 
     h2 {
-        margin-top: 40px;
+        margin-top: 18px;
+        margin-left: 70px;
         font-family: 'Lato', sans-serif;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: 300;
     }
 
@@ -142,16 +177,15 @@ p {
         display: inline-block; 
     }
 
-    img {
-        width: 50px;
-        margin: 0 34px;
+    li > img {
+        width: 40px;
+        margin: 0 42px 0 24px;
         opacity: 0.7;
     }
 }
 
 #social-icons {
-    margin-top: 40px;
-    margin-left: 46px;
+    margin-top: 32px;
 }
 
 #mail {
@@ -159,9 +193,25 @@ p {
 }
 
 #legal-stuff {
-    margin-top: 140px;
-    color: rgb(250, 241, 230);
+    margin-top: 200px;
+    color: rgb(203, 208, 208);
     font-weight: 300;
+
+    a {
+        color: rgb(232, 170, 108);
+    }
+}
+
+// RESPONSIVE
+
+@media (max-width: 1180px) {
+    .title {
+        margin-top: 48px;
+    }
+
+    #name {
+        font-size: 78px;
+    }
 }
 
 
